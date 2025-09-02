@@ -1,0 +1,137 @@
+[
+  {
+    "title": "On the use of artificial intelligence to deal with privacy in IoT systems: A systematic literature review",
+    "authors": "Giammaria Giordano, Filomena Ferrucci, Fabio Palomba",
+    "venue": "Journal of Systems and Software (JSS)",
+    "year": "2022",
+    "type": "journal",
+    "best_paper": false,
+    "pdf": "papers/J1.pdf"
+  },
+  {
+    "title": "On the Evolution of Inheritance and Delegation Mechanisms and Their Impact on Code Quality",
+    "authors": "Giammaria Giordano, Antonio Fasulo, Gemma Catolino, Fabio Palomba, Filomena Ferrucci, Carmine Gravino",
+    "venue": "IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)",
+    "year": "2022",
+    "type": "conference",
+    "best_paper": false,
+    "pdf": "papers/C1.pdf"
+  },
+  {
+    "title": "A Preliminary Conceptualization and Analysis on Automated Static Analysis Tools for Vulnerability Detection in Android Apps",
+    "authors": "Giammaria Giordano, Filomena Ferrucci, Fabio Palomba",
+    "venue": "Euromicro SEAA",
+    "year": "2022",
+    "type": "conference",
+    "best_paper": false,
+    "pdf": "papers/C2.pdf"
+  },
+  {
+    "title": "QuantuMoonLight: A Low-Code Platform to Experiment with Quantum Machine Learning",
+    "authors": "Francesco Amato, Matteo Cicalese, Luca Contrasto, ... Giammaria Giordano, ..., Fabio Palomba",
+    "venue": "SoftwareX",
+    "year": "2023",
+    "type": "journal",
+    "best_paper": false,
+    "pdf": "papers/J2.pdf"
+  },
+  {
+    "title": "On the Adoption and Effects of Source Code Reuse on Defect Proneness and Maintenance Effort",
+    "authors": "Giammaria Giordano, Gerardo Festa, Gemma Catolino, Fabio Palomba, Filomena Ferrucci, Carmine Gravino",
+    "venue": "Empirical Software Engineering (EMSE)",
+    "year": "2023",
+    "type": "journal",
+    "best_paper": false,
+    "pdf": "papers/J3.pdf"
+  },
+  {
+    "title": "Understanding Developer Practices and Code Smells Diffusion in AI-Enabled Software: A Preliminary Study",
+    "authors": "Giammaria Giordano, Giusy Annunziata, Andrea De Lucia, Fabio Palomba",
+    "venue": "IWSM Mensura",
+    "year": "2023",
+    "type": "conference",
+    "best_paper": false,
+    "pdf": "papers/C5.pdf"
+  },
+  {
+    "title": "The Yin and Yang of Software Quality: On the Relationship between Design Patterns and Code Smells",
+    "authors": "Giammaria Giordano, Giulia Sellitto, Aurelio Sepe, Fabio Palomba, Filomena Ferrucci",
+    "venue": "Euromicro SEAA",
+    "year": "2024",
+    "type": "conference",
+    "best_paper": true,
+    "pdf": "papers/C4.pdf"
+  },
+  {
+    "title": "Toward a Search-Based Approach to Support the Design of Security Tests for Malicious Network Traffic",
+    "authors": "Davide La Gamba, Gerardo Iuliano, Gilberto Recupito, Giammaria Giordano, Filomena Ferrucci, Dario Di Nucci, Fabio Palomba",
+    "venue": "Workshop on Security Testing for Complex Software Systems (SECUTE)",
+    "year": "2024",
+    "type": "conference",
+    "best_paper": false,
+    "pdf": "papers/C7.pdf"
+  },
+  {
+    "title": "Into the ML-Universe: An Improved Classification and Characterization of Machine-Learning Projects",
+    "authors": "Vincenzo De Martino, Gilberto Recupito, Giammaria Giordano, Filomena Ferrucci, Dario Di Nucci, Fabio Palomba",
+    "venue": "Journal of Systems and Software (JSS)",
+    "year": "2025",
+    "type": "journal",
+    "best_paper": false,
+    "pdf": "papers/J4.pdf"
+  },
+  {
+    "title": "Contextual Fairness-Aware Practices in ML: A Cost-Effective Empirical Evaluation",
+    "authors": "Alessandra Parziale, Gianmario Voria, Giammaria Giordano, Gemma Catolino, Gregorio Robles, Fabio Palomba",
+    "venue": "1st International Workshop on Fairness in Software Systems",
+    "year": "2025",
+    "type": "conference",
+    "best_paper": true,
+    "pdf": "papers/C8.pdf"
+  },
+  {
+    "title": "When Code Smells Meet ML: On the Lifecycle of ML-specific Code Smells in ML-enabled Systems",
+    "authors": "Gilberto Recupito, Giammaria Giordano, Filomena Ferrucci, Dario Di Nucci, Fabio Palomba",
+    "venue": "Empirical Software Engineering (EMSE)",
+    "year": "2025",
+    "type": "journal",
+    "best_paper": false,
+    "pdf": "papers/J5.pdf"
+  },
+  {
+    "title": "An Evidence-Based Study on the Relationship of Software Engineering Practices on Code Smells in Python ML Projects",
+    "authors": "Giammaria Giordano, Antonio Della Porta, Filomena Ferrucci, Fabio Palomba",
+    "venue": "Euromicro SEAA",
+    "year": "2025",
+    "type": "conference",
+    "best_paper": false,
+    "pdf": "papers/C9.pdf"
+  },
+  {
+    "title": "Fairness on a Budget, Across the Board: A Cost-Effective Evaluation of Fairness-Aware Practices Across Contexts, Tasks, and Sensitive Attributes",
+    "authors": "Alessandra Parziale, Gianmario Voria, Giammaria Giordano, Gemma Catolino, Gregorio Robles, Fabio Palomba.",
+    "venue": "Elsevier's Information and Software Technology (IST)",
+    "year": "2025",
+    "type": "journal",
+    "best_paper": false,
+    "pdf": "papers/J6.pdf"
+  },
+  {
+    "title": "The candle is burning out on its own...: Modeling Fatigue and Empathy Among Chinese Developers",
+    "authors": "Damian Tamburri, Haotian. Zhang, Kelly Blincoe, Rick  Kazman, Giammaria Giordano, Vvaleria Pontillo, F. Palomba",
+    "venue": "Euromicro SEAA",
+    "year": "2025",
+    "type": "conference",
+    "best_paper": false,
+    "pdf": "papers/C10.pdf"
+  },
+  {
+    "title": "Teaching Software Engineering for Artificial Intelligence: An Experience Report",
+    "authors": "Fabio Palomba, Gianmario Voria, Alessandra Parziale, Viviana Pentangelo, Antonio Della Porta, Vincenzo De Martino, Gilberto Recupito, Giammaria Giordano.",
+    "venue": "Euromicro SEAA",
+    "year": "2025",
+    "type": "conference",
+    "best_paper": false,
+    "pdf": "papers/C11.pdf"
+  }
+]

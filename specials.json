@@ -1,0 +1,30 @@
+[
+  {
+    "title": "SQA4AI 2025 – Software Quality Assurance for AI-Enabled Systems (Workshop)",
+    "role": "organizer",
+    "venue": "SQA4AI 2025",
+    "year": "2025",
+    "url": "https://sqa4ai2025.github.io/SQA4AI2025/"
+  },
+  {
+    "title": "SQA4AI – Workshop on Software Quality Assurance for AI-Enabled Systems",
+    "role": "organizer",
+    "venue": "SQA4AI Workshop",
+    "year": "2024",
+    "url": "https://sqa4ai-ws.github.io/"
+  },
+  {
+    "title": "Special Issue: Emerging Concerns and Defect Patterns in Software Systems",
+    "role": "coordinator",
+    "venue": "Empirical Software Engineering (EMSE)",
+    "year": "2025",
+    "url": "https://emsejournal.github.io/special_issues/2025_Emerging_Concerns.html"
+  },
+  {
+    "title": "CFP: Using AI Models to Improve Code Quality, Productivity, and Reliability",
+    "role": "coordinator",
+    "venue": "IEEE Software (CFP)",
+    "year": "2025",
+    "url": "https://www.computer.org/digital-library/magazines/so/cfp-ai-models-code-improvement"
+  }
+]

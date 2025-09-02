@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giammaria Giordano - Software Engineering Researcher</title>
+  <meta name="description" content="Portfolio of Giammaria Giordano, Software Engineering researcher focusing on code quality, reuse, and reliability." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main">
+    <div class="nav-container">
+      <a class="logo" href="#home" aria-label="Go to home">
+        <img src="assets/images/logo.png" alt="Giammaria Giordano Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        
+        <!-- <li><a href="#contact">Contact</a></li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 id="hero-title">Hello, I'm <span class="accent">Giammaria</span></h1>
+        <p>Software Engineering Researcher | Ph.D. Graduate | Passionate about code quality and software reuse in evolving systems</p>
+        <div class="cta-buttons">
+          <a href="#research" class="btn btn-primary">View My Research</a>
+          <a id="btn-contact" class="btn btn-outline" href="#contact">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <img src="assets/images/giammaria.png" alt="Giammaria Giordano" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" id="about-title">About Me</h2>
+        <p class="section-subtitle">A passionate researcher in Software Engineering focusing on code quality and software reuse</p>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="about-card">
+            <h3>Software Engineering Salerno Lab</h3>
+            <p>Active member of the SeSa Lab. Here I develop innovative research in software engineering.</p>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>I am a researcher at the SeSa Lab, University of Salerno.
+            My work focuses on software engineering, with particular attention to code quality, technical debt, and the challenges introduced by artificial intelligence in software systems. I am passionate about understanding how software evolves and how practices, tools, and methodologies can support developers in building reliable, maintainable, and fair systems. My research often combines empirical studies with AI- and data-driven techniques to address issues of quality, security, and privacy in software development.</p>
+          <div class="stats" role="list">
+            <div class="stat-item" role="listitem">
+              <span class="stat-number" aria-label="Publications count">15+</span>
+              <span class="stat-label">Publications</span>
+            </div>
+            <div class="stat-item" role="listitem">
+              <span class="stat-number" aria-label="Years of research">4</span>
+              <span class="stat-label">Years of Research</span>
+            </div>
+            <div class="stat-item" role="listitem">
+              <span class="stat-number" aria-label="Citations">70+</span>
+              <span class="stat-label">Citations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research" class="section" aria-labelledby="research-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" id="research-title">My Research</h2>
+        <p class="section-subtitle">Research areas and main interests in Software Engineering</p>
+      </div>
+      <div class="research-grid">
+        <div class="research-card">
+          <div class="research-icon">🔄</div>
+          <h3>Software Reuse</h3>
+          <p>I study the impact of software reuse on quality and maintainability of systems, analyzing patterns and reuse metrics in open source and industrial projects.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-icon">📈</div>
+          <h3>Code Quality</h3>
+          <p>I develop methodologies and tools for automatic code quality assessment, with focus on systems that evolve over time.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-icon">🛠️</div>
+          <h3>Software Reliability</h3>
+          <p>Research on how to ensure software reliability through advanced testing techniques and static code analysis.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-icon">🔍</div>
+          <h3>Empirical Studies</h3>
+          <p>I conduct large-scale empirical studies to understand software development and maintenance patterns in real-world contexts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="section publications" aria-labelledby="publications-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" id="publications-title">Publications</h2>
+        <p class="section-subtitle">My latest contributions to Software Engineering research</p>
+      </div>
+      <div id="publications-list" aria-live="polite">
+        <!-- Publications will be injected here by script.js -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Specials Section -->
+  <section id="specials" class="section specials" aria-labelledby="specials-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" id="specials-title">Special Issues & Workshops</h2>
+        <p class="section-subtitle">Calls, workshops, and special issues I'm organizing or coordinating</p>
+      </div>
+      <div class="specials-controls" aria-label="Filters">
+        <button class="btn btn-outline" data-filter="all">All</button>
+        <button class="btn btn-outline" data-filter="organizer">Organizer</button>
+        <button class="btn btn-outline" data-filter="coordinator">Coordinator</button>
+      </div>
+      <div id="specials-list" class="specials-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="hobbies" class="section" aria-labelledby="hobbies-title">
+    <div class="container fade-in">
+      <div class="section-header">
+        <h2 id="hobbies-title" class="section-title">
+          <svg class="icon-cube" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2l9 5-9 5-9-5 9-5z" fill="#e63946"/>
+            <path d="M21 7v10l-9 5V12l9-5z" fill="#2a7de1"/>
+            <path d="M3 7v10l9 5V12L3 7z" fill="#2bb673"/>
+          </svg>
+          Hobbies
+        </h2>
+        <p class="section-subtitle">Little things I enjoy outside research</p>
+      </div>
+  
+      <p class="hobbies-text">
+        Outside of research, I love puzzle games — especially the Rubik’s Cube.
+        My personal record is <strong>40 seconds</strong> on the classic 3×3.
+        You can check out some of my solving videos on
+        <a href="https://www.instagram.com/broke31sf/" target="_blank" rel="noopener noreferrer">Instagram</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section
+  <section id="contact" class="section contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3 id="contact-title">Let's collaborate!</h3>
+          <p>I am always interested in new research collaborations, innovative projects, and networking opportunities with fellow researchers.</p>
+          <div class="contact-links">
+            <a href="mailto:ggiordano@unisa.it" class="contact-link" aria-label="Email me">✉️</a>
+            <a href="https://scholar.google.com" class="contact-link" aria-label="Google Scholar">🎓</a>
+            <a href="https://github.com/giammariagiordano" class="contact-link" aria-label="GitHub">💻</a>
+            <a href="https://linkedin.com" class="contact-link" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p id="form-status" class="visually-hidden" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Add Publication Button -->
+
+  
+ 
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Giammaria Giordano · All rights reserved</p>
+      <div class="footer-socials">
+        <a href="https://scholar.google.com/citations?user=nrk-z3oAAAAJ&hl=it&oi=ao" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer">
+          <img src="assets/social/scholar.png" alt="Google Scholar" class="social-icon">
+        </a>
+        <a href="https://x.com/GiammariaGiord1" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+          <img src="assets/social/twitter.png" alt="X (Twitter)" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/broke31sf/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <img src="assets/social/ig.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://github.com/giammariagiordano" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <img src="assets/social/github.jpg" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/giammaria-giordano/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <img src="assets/social/linkedin.png" alt="LinkedIn" class="social-icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
