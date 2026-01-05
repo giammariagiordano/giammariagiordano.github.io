@@ -5,23 +5,46 @@ const SPECIALS_URL = 'specials.json';
 // --- helper robusto per risolvere link relativi (funziona anche in sottocartella GitHub Pages)
 const resolveHref = (p) => (p ? new URL(p, document.baseURI).toString() : null);
 
+// ===== Helper: estrazione codice J/C + numero (da id/code o dal nome PDF) =====
+const extractCode = (p) => {
+  const raw = (p.id || p.code || p.pdf || '').toString();
+  const m = raw.match(/([JC])\s*(\d+)/i);
+  if (!m) return { prefix: 'Z', num: -1 };
+  return { prefix: m[1].toUpperCase(), num: parseInt(m[2], 10) };
+};
+
+// Ordine dei prefissi nello stesso anno (modifica qui se vuoi C prima di J)
+const prefixRank = (prefix) => (prefix === 'J' ? 0 : prefix === 'C' ? 1 : 2);
+
 // ===== Publications Rendering con SCORRIMENTO + bottoni allineati =====
 async function loadPublications() {
   const listHost = document.querySelector('#publications-list');
   listHost.innerHTML = '<p class="fade-in">Loading publications…</p>';
 
   try {
-    const resp = await fetch(PUBLICATIONS_URL, { cache: 'no-store' });
+    // cache busting extra (oltre a cache: 'no-store') per evitare caching aggressivo su Pages/CDN
+    const bust = `v=${Date.now()}`;
+    const resp = await fetch(`${PUBLICATIONS_URL}?${bust}`, { cache: 'no-store' });
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     const pubs = await resp.json();
 
-    // Group by year (desc)
+    // Group by year (desc) + "Unknown" in fondo
     const byYear = pubs.reduce((acc, p) => {
-      const y = String(p.year || 'Unknown');
+      const y = (p.year !== undefined && p.year !== null && String(p.year).trim() !== '')
+        ? String(p.year).trim()
+        : 'Unknown';
       (acc[y] ||= []).push(p);
       return acc;
     }, {});
-    const years = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
+
+    const years = Object.keys(byYear).sort((a, b) => {
+      if (a === 'Unknown') return 1;
+      if (b === 'Unknown') return -1;
+      return Number(b) - Number(a); // sort numerico: 2026 prima di 2025
+    });
+
+    // Debug utile (apri DevTools Console)
+    console.log('[Publications] Loaded:', pubs.length, 'Years:', years);
 
     // Toolbar (chips anni + bottoni scorrimento)
     const toolbar = document.createElement('div');
@@ -62,10 +85,27 @@ async function loadPublications() {
       scroller.innerHTML = '';
       const items = filterYear === 'all'
         ? pubs
-        : pubs.filter(p => String(p.year) === String(filterYear));
+        : pubs.filter(p => String(p.year).trim() === String(filterYear).trim());
 
       items
-        .sort((a, b) => String(b.year).localeCompare(String(a.year)))
+        .sort((a, b) => {
+          // 1) anno decrescente
+          const ay = Number(String(a.year || 0).trim()) || 0;
+          const by = Number(String(b.year || 0).trim()) || 0;
+          if (ay !== by) return by - ay;
+
+          // 2) entro lo stesso anno: prima per tipo (J poi C), poi per numero decrescente (10 > 9 > 8)
+          const ac = extractCode(a);
+          const bc = extractCode(b);
+
+          const pr = prefixRank(ac.prefix) - prefixRank(bc.prefix);
+          if (pr !== 0) return pr;
+
+          if (ac.num !== bc.num) return bc.num - ac.num;
+
+          // 3) tie-breaker stabile
+          return String(a.title || '').localeCompare(String(b.title || ''));
+        })
         .forEach(pub => {
           const bestBadge = pub.best_paper ? '<span title="Best Paper" aria-label="Best Paper" style="margin-left:8px">🏆</span>' : '';
           const pdfHref = resolveHref(pub.pdf);
