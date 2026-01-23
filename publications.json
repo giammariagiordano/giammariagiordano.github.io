@@ -160,5 +160,14 @@
     "type": "journal",
     "best_paper": false,
     "pdf": "papers/J9.pdf"
+  },
+  {
+    "title": "Déjà Vu: A Replication Study on Code Smells and Faults in JavaScript Projects",
+    "authors": "Kevin Pacifico, Giammaria Giordano, Valeria Pontillo, Massimiliano Di Penta, Damian A. Tamburri, Fabio Palomba.",
+    "venue": "International Conference on Program Comprehension (ICPC)",
+    "year": "2026",
+    "type": "conference",
+    "best_paper": false,
+    "pdf": "papers/C12.pdf"
   }
 ]
